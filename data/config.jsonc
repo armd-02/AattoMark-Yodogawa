@@ -38,7 +38,7 @@
         // "targets"はConf.targetsをカテゴリ表示、"activity"はactivity(フォームデータ)を表示
         "targets": [
             "activity",
-            "arts"
+            "targets"
         ],
         "update_mode": "",
         "playback": {

@@ -5,6 +5,7 @@ class CMapMaker {
 		this.detail = false;				// detail_view表示中はtrue
 		this.open_osmid = "";
 		this.last_modetime = 0;
+		this.mode = "map";
 	};
 
 	init(basehtml) {	// Initialize
@@ -23,8 +24,8 @@ class CMapMaker {
 			if (!Conf.listTable.playback.view) list_playback_control.style.display = "none";	// playback control view:true/false
 
 			// mouse hover event(baselist mouse scroll)
-			baselist.addEventListener("mouseover", () => { map.scrollWheelZoom.disable(); map.dragging.disable() }, false);
-			baselist.addEventListener("mouseleave", () => { map.scrollWheelZoom.enable(); map.dragging.enable() }, false);
+			baselist.addEventListener("mouseover", () => { console.log("mouseover"); map.scrollWheelZoom.disable(); map.dragging.disable() }, false);
+			baselist.addEventListener("mouseleave", () => { console.log("mousleave"); map.scrollWheelZoom.enable(); map.dragging.enable() }, false);
 
 			poiCont.set_actjson(results[0]);
 			winCont.window_resize();
@@ -86,14 +87,15 @@ class CMapMaker {
 		winCont.modal_open({ "title": msg.ttl, "message": msg.msg, "mode": "close", callback_close: winCont.modal_close, "menu": false });
 	}
 
-	mode_change(mode) {	// mode change(list or map)
+	mode_change(newmode) {	// mode change(list or map)
 		if (this.status !== "mode_change" && (this.last_modetime + 300) < Date.now()) {
 			this.status = "mode_change";
 			let params = { 'map': ['down', 'remove', 'start'], 'list': ['up', 'add', 'stop'] };
-			mode = !mode ? (list_collapse.classList.contains('show') ? 'map' : 'list') : mode;
-			console.log('mode_change: ' + mode + ' : ' + this.last_modetime + " : " + Date.now());
-			list_collapse_icon.className = 'fas fa-chevron-' + params[mode][0];
-			list_collapse.classList[params[mode][1]]('show');
+			this.mode = !newmode ? (list_collapse.classList.contains('show') ? 'map' : 'list') : newmode;
+			console.log('mode_change: ' + this.mode + ' : ' + this.last_modetime + " : " + Date.now());
+			leaflet.enable(this.mode == "map");
+			list_collapse_icon.className = 'fas fa-chevron-' + params[this.mode][0];
+			list_collapse.classList[params[this.mode][1]]('show');
 			this.last_modetime = Date.now();
 			this.status = "normal";
 			mapid.focus();
@@ -323,7 +325,7 @@ class cMapEvents {
 						};
 					}
 					listTable.make();					// view all list
-					listTable.make_category(Conf.listTable.targets);
+					//listTable.make_category(Conf.listTable.targets);
 					resolve();
 				} else {
 					cmap_events.#map_move_promise(resolve, reject);	// 失敗時はリトライ(接続先はoverpass.jsで変更)
@@ -363,8 +365,7 @@ class cMapEvents {
 		cMapmaker.poi_view(targets);	// in targets
 		let catname = list_category.value !== "-" ? `?category=${list_category.value}` : "";
 		history.replaceState('', '', location.pathname + catname + location.hash);
-		list_category.blur();
-		mapid.focus();
+		leaflet.enable(cMapmaker.mode == "map");
 	};
 }
 var cmap_events = new cMapEvents();
