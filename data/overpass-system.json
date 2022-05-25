@@ -33,8 +33,12 @@
         },
         "pub": {
             "overpass": [
-                "node[\"amenity\"]",
-                "way[\"amenity\"]"
+                "node[\"amenity\"=\"biergarten\"]",
+                "node[\"amenity\"=\"bar\"]",
+                "node[\"amenity\"=\"pub\"]",
+                "way[\"amenity\"=\"biergarten\"]",
+                "way[\"amenity\"=\"bar\"]",
+                "way[\"amenity\"=\"pub\"]"
             ],
             "tags": [
                 "amenity=biergarten",
@@ -52,8 +56,12 @@
         },
         "restaurant": {
             "overpass": [
-                "node[\"amenity\"]",
-                "way[\"amenity\"]"
+                "node[\"amenity\"=\"restaurant\"]",
+                "node[\"amenity\"=\"fast_food\"]",
+                "node[\"amenity\"=\"cafe\"]",
+                "way[\"amenity\"=\"restaurant\"]",
+                "way[\"amenity\"=\"fast_food\"]",
+                "way[\"amenity\"=\"cafe\"]"
             ],
             "tags": [
                 "amenity=restaurant",
@@ -295,14 +303,15 @@
         },
         "park": {
             "overpass": [
-                "way[\"amenity\"]",
+                "node[\"amenity\"=\"shelter\"]",
                 "node[\"leisure\"=\"park\"]",
-                "way[\"leisure\"=\"park\"]",
                 "node[\"leisure\"=\"playground\"]",
-                "way[\"leisure\"=\"playground\"]",
                 "node[\"man_made\"=\"tower\"]",
-                "way[\"man_made\"=\"tower\"]",
                 "node[\"man_made\"=\"drinking_water\"]",
+                "way[\"amenity\"=\"shelter\"]",
+                "way[\"leisure\"=\"park\"]",
+                "way[\"leisure\"=\"playground\"]",
+                "way[\"man_made\"=\"tower\"]",
                 "way[\"landuse\"=\"recreation_ground\"]"
             ],
             "tags": [

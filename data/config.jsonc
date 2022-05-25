@@ -53,7 +53,7 @@
         "targetName": "activity"
     },
     "splash": {
-        "url": "./image/Palette_icon.png"
+        "url": "./image/AattoMark.png"
     },
     "static": {
         "mode": false,
@@ -96,7 +96,7 @@
     "detail_menu": [
         {
             "glot-model": "act_add",
-            "linkto": "javascript:modal_activities.edit({form:'disaster'})",
+            "linkto": "javascript:modal_activities.edit({form:'AattoMark'})",
             "divider": false
         },
         {
@@ -117,7 +117,7 @@
         "buttons": [
             {
                 "btn_class": "btn btn-light",
-                "code": "javascript:modal_activities.edit({form:'disaster'})",
+                "code": "javascript:modal_activities.edit({form:'AattoMark'})",
                 "icon_class": "fas fa-plus",
                 "btn_glot_name": "add_activity"
             },
