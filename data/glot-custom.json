@@ -1,14 +1,14 @@
 {
-	"title": {
-		"ja": "あぁっとマークよどがわ",
+	"site_title": {
+		"ja": "あぁっとマーク淀川",
 		"en": "AattoMark-Yodogawa"
 	},
-	"subtitle": {
+	"site_subtitle": {
 		"ja": "Powered by Community Map Maker",
 		"en": "Powered by Community Map Maker"
 	},
 	"about": {
-		"ja": "あぁっとマークよどがわについて",
+		"ja": "あぁっとマーク淀川について",
 		"en": "about AattoMark-Yodogawa"
 	},
 	"owner": {
@@ -20,7 +20,7 @@
 		"en": "Terms of Use"
 	},
 	"licence_message": {
-		"ja": "あぁっとマークよどがわのデータはOpenStreetMapと独自データを組み合わせています。",
+		"ja": "あぁっとマーク淀川のデータはOpenStreetMapと独自データを組み合わせています。",
 		"en": "The data of AattoMark-Yodogawa is a combination of OpenStreetMap and Original data."
 	},
 	"more_message": {
@@ -47,7 +47,7 @@
 		"ja": "思い出など",
 		"en": "Memorials"
 	},
-	"ds_actdate":{
+	"actdate":{
 		"ja":"発生日",
 		"en":"Disaster Date"
 	},
@@ -130,10 +130,6 @@
 	"libc_ymd": {
 		"ja": "時期",
 		"en": "Around"
-	},
-	"memories_title": {
-		"ja": "タイトル",
-		"en": "Title"
 	},
 	"memories_author": {
 		"ja": "投稿者",

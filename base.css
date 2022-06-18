@@ -23,12 +23,13 @@ body {
     overflow: hidden;
 }
 
-h5 {
-    font-size: 1.1em !important;
-}
-
 h4 {
     font-size: 1.3em !important;
+}
+
+h5 {
+    font-size: 1.2em !important;
+    font-weight: bold;
 }
 
 /* body dom */
@@ -53,6 +54,24 @@ h4 {
 
 #mapid {
     height: 100%;
+}
+
+/* list */
+ul {
+    column-count: 3;
+    list-style-type: none;
+}
+
+li::before {
+    position: relative;
+    top: -2px;
+    left: -12px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    content: '';
+    border-radius: 100%;
+    background: green;
 }
 
 /* fade out */
@@ -122,8 +141,16 @@ h2.zoom {
     height: 100%;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 p {
     line-height: 1.5;
+}
+
+span {
+    font-size: 1rem;
 }
 
 span.title {

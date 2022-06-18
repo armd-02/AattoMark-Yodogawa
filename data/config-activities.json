@@ -193,7 +193,7 @@
             "footer": "",
             "form": {
                 "actdate": {
-                    "glot": "ds_actdate",
+                    "glot": "actdate",
                     "type": "date",
                     "gsheet": "actdate"
                 },
@@ -239,12 +239,22 @@
             "footer": "",
             "form": {
                 "actdate": {
-                    "glot": "ds_actdate",
+                    "glot": "actdate",
                     "type": "date",
                     "gsheet": "actdate"
                 },
-                "subject": {
-                    "glot": "ds_subject",
+                "category":{
+                    "glot": "act_category",
+                    "type": "select",
+                    "category": [
+                        "イベント",
+                        "活動記録",
+                        "店舗紹介"
+                    ],
+                    "gsheet": "category"
+                },
+                "title": {
+                    "glot": "title",
                     "type": "text",
                     "gsheet": "title"
                 },

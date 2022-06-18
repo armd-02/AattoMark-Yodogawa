@@ -26,26 +26,28 @@
         "bookmark": true
     },
     "PoiViewZoom": {
-        "arts": 14,
-        "restaurant": 18
+        "arts": 13,
+        "restaurant": 18,
+        "activity": 12
     },
-    "act_PoiViewZoom": 14,
     "targets": [
         "arts",
-        "restaurant"
+        "restaurant",
+        "activity"
     ],
     "listTable": {
         // "targets"はConf.targetsをカテゴリ表示、"activity"はactivity(フォームデータ)を表示
         "targets": [
-            "activity",
-            "targets"
+            "arts",
+            "activity"
         ],
         "update_mode": "",
         "playback": {
             "view": false,
             "zoomLevel": 15,
             "timer": 4000
-        }
+        },
+        "download": false
     },
     "google": {
         "Analytics": "",
@@ -101,7 +103,7 @@
         },
         {
             "glot-model": "osm_open",
-            "linkto": "javascript:winCont.osm_open(location.search)",
+            "linkto": "javascript:winCont.osm_open(cMapmaker.open_osmid)",
             "divider": false
         },
         {
@@ -116,13 +118,13 @@
         // 詳細モーダルの追加ボタン 
         "buttons": [
             {
-                "btn_class": "btn btn-light",
+                "btn_class": "btn btn-light border-secondary mr-2",
                 "code": "javascript:modal_activities.edit({form:'AattoMark'})",
                 "icon_class": "fas fa-plus",
                 "btn_glot_name": "add_activity"
             },
             {
-                "btn_class": "btn btn-light",
+                "btn_class": "btn btn-light border-secondary",
                 "code": "javascript:cMapmaker.url_share()",
                 "icon_class": "fas fa-clone",
                 "btn_glot_name": "share_link"

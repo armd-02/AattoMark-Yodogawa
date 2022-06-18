@@ -1,4 +1,8 @@
 {
+	"cat_select": {
+		"ja": "選択表示",
+		"en": "Select display"
+	},
 	"act_add": {
 		"ja": "追加",
 		"en": "Add information"
@@ -31,7 +35,11 @@
 		"ja": "登録失敗。ユーザー名とパスワードを確認してください",
 		"en": "failed. Please check your username and password"
 	},
-	"download":{
+	"title": {
+		"ja": "タイトル",
+		"en": "Title"
+	},
+	"download": {
 		"ja": "一覧表をダウンロード",
 		"en": "list download"
 	},
@@ -48,8 +56,8 @@
 		"en": "Getdate: "
 	},
 	"share_link": {
-		"ja": "URLコピー",
-		"en": "URL Copy"
+		"ja": "Link",
+		"en": "Link"
 	},
 	"add_activity": {
 		"ja": "情報追加",
@@ -142,6 +150,10 @@
 	"osm_open": {
 		"ja": "OpenStreetMapで見る",
 		"en": "See in OpenStreetMap"
+	},
+	"target_activity": {
+		"ja": "活動内容",
+		"en": "activity"
 	},
 	"target_arts": {
 		"ja": "アート",

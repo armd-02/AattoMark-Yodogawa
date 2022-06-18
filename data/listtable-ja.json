@@ -18,13 +18,18 @@
                 {
                     "id": "name",
                     "name": "題名"
-                }
+                },
+                {
+                    "id": "artist_name",
+                    "name": "作者名"
+                }                
             ],
             "poi_fields": [
                 "id",
                 "timestamp",
                 "#category",
-                "name"
+                "name",
+                "artist_name"
             ],
             "act_fields": [
                 "id",
