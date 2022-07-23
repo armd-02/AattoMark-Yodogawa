@@ -9,6 +9,7 @@
             "bbq": "bbq",
             "bench": "bench",
             "bicycle_parking": "bicycle parking",
+            "bus_station":"bus station",
             "cafe": "cafe",
             "clinic": "clinic",
             "clock": "clock",
@@ -23,6 +24,7 @@
             "fire_station": "fire station",
             "food_court": "food court",
             "fountain": "fountain",
+            "grave_yard": "grave yard",
             "hospital": "Hospital",
             "ice_cream": "ice cream",
             "internet_cafe": "internet cafe",
@@ -61,6 +63,9 @@
         },
         "attraction": {
             "animal": "animal"
+        },
+        "bridge":{
+            "yes":"bridge"
         },
         "diplomatic": {
             "embassy": "embassy"
@@ -103,6 +108,8 @@
             "spices": "spices",
             "tobacco": "pipe",
             "tea": "tea",
+            "ticket":"ticket",
+            "travel_agency":"travel agency",
             "water": "water",
             "wine": "wine",
             "supermarket": "supermarket",
@@ -215,7 +222,10 @@
             "water_tank": "Water Tank"
         },
         "highway": {
-            "traffic_signals": "traffic signals"
+            "bus_stop":"bus stop",
+            "traffic_signals": "traffic signals",
+            "street_lamp": "street lamp",
+            "elevator": "elevator"
         },
         "social_facility": {
             "shelter": "temporary sleeping"
@@ -278,6 +288,7 @@
             "guidepost": "guidepost"
         },
         "man_made": {
+            "bridge":"bridge",
             "torii": "torii",
             "lamp": "lantern",
             "tower": "tower",
@@ -316,6 +327,7 @@
             "neighbourhood": "neighbourhood"
         },
         "waterway": {
+            "canal": "canal",
             "river": "river"
         },
         "suffix_covid19": "(provisional)",

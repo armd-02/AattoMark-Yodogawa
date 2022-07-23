@@ -262,11 +262,11 @@ class cMapEvents {
 				} else {
 					cmap_events.#map_move_promise(resolve, reject);	// 失敗時はリトライ(接続先はoverpass.jsで変更)
 				};
-			}).catch(() => {
+			})/* .catch(() => {
 				this.busy = 0;
 				console.log("cMapEvents: map_move: Reject");
 				reject();
-			});
+			}); */
 		}, 700);
 	}
 

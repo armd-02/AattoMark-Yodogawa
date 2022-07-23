@@ -11,6 +11,7 @@
                 "bbq": "bbq.svg",
                 "bench": "bench.svg",
                 "bicycle_parking": "parking-bicycle.svg",
+                "bus_station": "board_bus.svg",
                 "cafe": "cafe.svg",
                 "clinic": "doctor.svg",
                 "clock": "clock.svg",
@@ -25,6 +26,7 @@
                 "fire_station": "fire-station.svg",
                 "food_court": "restaurant.svg",
                 "fountain": "fountain.svg",
+                "grave_yard": "marker-stroked.svg",
                 "hospital": "hospital.svg",
                 "ice_cream": "ice-cream.svg",
                 "internet_cafe": "internet_cafe.svg",
@@ -63,6 +65,9 @@
             },
             "attraction": {
                 "animal": "animal.svg"
+            },
+            "bridge": {
+                "yes": "bridge.svg"
             },
             "diplomatic": {
                 "embassy": "diplomatic.svg"
@@ -124,7 +129,9 @@
                 "spices": "spice_bottle.svg",
                 "supermarket": "grocery.svg",
                 "tea": "teahouse.svg",
+                "ticket": "ticket.svg",
                 "tobacco": "pipe.svg",
+                "travel_agency":"briefcase.svg",
                 "shoes": "shoe.svg",
                 "variety_store": "shop.svg",
                 "water": "water.svg",
@@ -145,6 +152,7 @@
                 "water_tank": "water.svg"
             },
             "highway": {
+                "bus_stop": "board_bus.svg",
                 "traffic_signals": "signal.svg",
                 "steps": "steps.svg",
                 "street_lamp": "street_lamp_arm.svg",
@@ -211,6 +219,7 @@
                 "guidepost": "map-signs.svg"
             },
             "man_made": {
+                "bridge": "bridge.svg",
                 "torii": "shinto.svg",
                 "lamp": "lantern.svg",
                 "tower": "Emoji_Black_bell2.svg",
@@ -252,6 +261,7 @@
                 "neighbourhood": "triangle-stroked.svg"
             },
             "waterway": {
+                "canal": "water.svg",
                 "river": "water.svg"
             },
             "wikipedia": {
@@ -275,7 +285,7 @@
             },
             "parking": {
                 "access": {
-                    "private": "marker-stroked.svg"
+                    "private": "parking.svg"
                 }
             },
             "tree": {

@@ -9,6 +9,7 @@
             "bbq": "バーベキュー",
             "bench": "ベンチ",
             "bicycle_parking": "駐輪場(バイク)",
+            "bus_station":"バスターミナル",
             "cafe": "カフェ/喫茶店",
             "clinic": "クリニック",
             "clock": "時計",
@@ -23,6 +24,7 @@
             "fire_station": "消防署",
             "food_court": "フードコート",
             "fountain": "噴水",
+            "grave_yard": "墓地",
             "hospital": "病院",
             "ice_cream": "アイスクリーム店",
             "internet_cafe": "インターネットカフェ",
@@ -61,6 +63,9 @@
         },
         "attraction": {
             "animal": "動物"
+        },
+        "bridge":{
+            "yes":"橋"
         },
         "diplomatic": {
             "embassy": "大使館"
@@ -103,6 +108,8 @@
             "spices": "スパイス専門店",
             "tobacco": "タバコ屋",
             "tea": "お茶専門店",
+            "ticket":"チケット店",
+            "travel_agency":"旅行代理店",
             "water": "飲料水専門店",
             "wine": "ワイン専門店",
             "supermarket": "スーパーマーケット",
@@ -215,7 +222,10 @@
             "water_tank": "防火水槽"
         },
         "highway": {
-            "traffic_signals": "信号機"
+            "bus_stop":"バス停",
+            "traffic_signals": "信号機",
+            "street_lamp": "街灯",
+            "elevator": "エレベーター"
         },
         "social_facility": {
             "shelter": "一時避難所"
@@ -278,6 +288,7 @@
             "guidepost": "道しるべ"
         },
         "man_made": {
+            "bridge":"橋",
             "torii": "鳥居",
             "lamp": "灯籠",
             "tower": "塔/鐘楼",
@@ -316,6 +327,7 @@
             "neighbourhood": "小字"
         },
         "waterway": {
+            "canal": "運河",
             "river": "川"
         },
         "suffix_covid19": "(暫定)",

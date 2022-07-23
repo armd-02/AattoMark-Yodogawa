@@ -207,6 +207,7 @@ class poiMarker {
 			return new Promise((resolve, reject) => {
 				let tags = params.poi.geojson.properties.tags == undefined ? params.poi.geojson.properties : params.poi.geojson.properties.tags;
 				let name = tags[params.langname] == undefined ? tags.name : tags[params.langname];
+				name = tags["bridge:name"] == undefined ? name : tags["bridge:name"];	// 橋の名称があれば優先
 				name = (name == "" || name == undefined) ? "" : name;
 				let actlists = poiCont.get_actlist(params.poi.geojson.id);
 				let size, html = `<div class="d-flex align-items-center">`;
@@ -215,10 +216,10 @@ class poiMarker {
 				size = parseInt(basic.getStyleSheetValue(css_name, "height"));
 				// if (actlists.length > 0) html += `<img class="attention" src="./image/attention_noframe.svg">`;
 				html += `<img class="${css_name}" src="./${Conf.icon.path}/${poiMarker.get_icon(tags)}" icon-name="${name}">`;
-				let span = `<span class="icon" style="font-size: ${Conf.effect.text.size}px">${name}</span>`;
+				let span = `<span class="icon ${css_name} fs-${Conf.effect.text.size}">${name}</span>`;
 				if (name !== "" && Conf.effect.text.view) html += span;
 				let icon = L.divIcon({ "className": "", "iconSize": [size + span_width, size], "iconAnchor": [size / 2, size / 2], "html": html + "</div>" });
-				let marker = L.marker(new L.LatLng(params.poi.latlng[0], params.poi.latlng[1]), { icon: icon, draggable: false });
+				let marker = L.marker(new L.LatLng(params.poi.latlng[0], params.poi.latlng[1]), { icon: icon, draggable: false, zIndexOffset: params.zIndexOffset });
 				marker.addTo(map).on('click', e => { cMapmaker.detail_view(e.target.mapmaker_id) });
 				marker.mapmaker_id = params.poi.geojson.id;
 				marker.mapmaker_key = params.target;
@@ -244,13 +245,15 @@ class poiMarker {
 					let actlists = poiCont.get_actlist(poi.geojson.id);
 					let viewflag = (actonly && actlists.length > 0) ? true : !actonly;
 					if (viewflag) {		// act ok
-						make_marker({ target: target, poi: poi, langname: 'name' }).then(marker => {
+						let zIdx = actlists.length > 0 ? 1000 : 0;
+						make_marker({ target: target, poi: poi, langname: 'name', zIndexOffset: zIdx }).then(marker => {
 							if (marker !== undefined) marker.forEach(val => poiMarker.markers[target].push(val));	// 複数Marker対応(Wikipediaの解説など)
 						});
 					};
 				};
 			});
 		};
+
 		if (all.acts.length > 0) {				// acts表示
 			all.acts.forEach((act) => {
 				let osm = poiCont.get_osmid(act.osmid);

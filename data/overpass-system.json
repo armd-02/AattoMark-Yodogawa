@@ -341,6 +341,7 @@
                 "way[\"landuse\"=\"farmland\"]",
                 "way[\"landuse\"=\"allotments\"]",
                 "way[\"landuse\"=\"orchard\"]",
+                "way[\"landuse\"=\"grass\"]",
                 "way[\"landuse\"=\"aquaculture\"]"
             ],
             "tags": [
@@ -348,6 +349,7 @@
                 "landuse=farmland",
                 "landuse=allotments",
                 "landuse=orchard",
+                "landuse=grass",
                 "landuse=aquaculture"
             ],
             "expression":{
