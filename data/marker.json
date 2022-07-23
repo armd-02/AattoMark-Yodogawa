@@ -73,6 +73,7 @@
                 "embassy": "diplomatic.svg"
             },
             "shop": {
+                "art":"art-gallery.svg",                
                 "agrarian": "agrarian.svg",
                 "alcohol": "alcohol-shop.svg",
                 "appliance": "laundry.svg",

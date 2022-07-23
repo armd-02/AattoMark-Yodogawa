@@ -71,6 +71,7 @@
             "embassy": "大使館"
         },
         "shop": {
+            "art":"美術品店", 
             "agrarian": "農協/農業用品店",
             "alcohol": "酒屋",
             "bakery": "パン屋",

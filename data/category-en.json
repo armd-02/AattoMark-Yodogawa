@@ -71,6 +71,7 @@
             "embassy": "embassy"
         },
         "shop": {
+            "art":"art", 
             "agrarian": "agrarian",
             "alcohol": "alcohol",
             "bakery": "bakery",
