@@ -29,14 +29,18 @@
         "arts": 13,
         "wayside_shrine":13,
         "restaurant": 19,
+        "shop":19,
         "pub":19,
+        "bath":19,
         "activity": 12
     },
     "targets": [
         "arts",
         "wayside_shrine",
         "restaurant",
+        "shop",
         "pub",
+        "bath",
         "activity"
     ],
     "listTable": {

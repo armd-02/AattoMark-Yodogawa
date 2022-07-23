@@ -31,6 +31,23 @@
                 "note"
             ]
         },
+        "bath":{
+            "overpass":[
+                "node[\"amenity\"=\"public_bath\"]",
+                "way[\"amenity\"=\"public_bath\"]"
+            ],
+            "tags":[
+                "amenity=public_bath"
+            ],
+            "expression":{
+                "stroke":"#808080",
+                "stroke-width":1
+            },
+            "titles": [
+                "name",
+                "operator"
+            ]
+        },
         "pub": {
             "overpass": [
                 "node[\"amenity\"=\"biergarten\"]",
