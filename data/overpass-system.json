@@ -287,10 +287,16 @@
         "theatre": {
             "overpass": [
                 "node[\"amenity\"=\"theatre\"]",
-                "way[\"amenity\"=\"theatre\"]"
+                "way[\"amenity\"=\"theatre\"]",
+                "node[\"amenity\"=\"studio\"]",
+                "way[\"amenity\"=\"studio\"]",
+                "node[\"amenity\"=\"nightclub\"]",
+                "way[\"amenity\"=\"nightclub\"]"
             ],
             "tags": [
-                "amenity=theatre"
+                "amenity=theatre",
+                "amenity=nightclub",
+                "amenity=studio"
             ],
             "expression":{
                 "stroke":"#705070",
