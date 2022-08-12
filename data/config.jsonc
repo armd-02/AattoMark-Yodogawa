@@ -48,8 +48,6 @@
     "listTable": {
         // "targets"はConf.targetsをカテゴリ表示、"activity"はactivity(フォームデータ)を表示
         "targets": [
-            "arts",
-            "wayside_shrine",
             "activity"
         ],
         "update_mode": "",
