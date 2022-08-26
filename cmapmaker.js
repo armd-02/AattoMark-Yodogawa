@@ -66,7 +66,7 @@ class CMapMaker {
 			if ((map.getZoom() < Conf.default.PoiLoadZoom) && !Conf.static.mode) {
 				winCont.spinner(false);
 				console.log("[success]cMapmaker: get_poi End(more zoom).");
-				resolve({ "update": false });
+				resolve({ "update": true });
 			} else {
 				OvPassCnt.get(keys, status_write).then(ovanswer => {
 					winCont.spinner(false);
