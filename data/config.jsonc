@@ -88,13 +88,13 @@
             "divider": false
         },
         {
-            "glot-model": "owner",
-            "linkto": "https://yodogawaartnet.jimdofree.com/",
-            "divider": true
+            "glot-model": "about",
+            "linkto": "https://github.com/armd-02/openhc-map",
+            "divider": false
         },
         {
-            "glot-model": "about",
-            "linkto": "https://github.com/armd-02/AattoMark-Yodogawa",
+            "glot-model": "owner",
+            "linkto": "https://github.com/K-Sakanoshita/community_mapmaker",
             "divider": false
         },
         {

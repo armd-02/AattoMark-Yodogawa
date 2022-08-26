@@ -4,24 +4,24 @@
 		"en": "AattoMark-Yodogawa"
 	},
 	"site_subtitle": {
-		"ja": "by 淀川アートネット",
-		"en": "by YODOGAWA ART-NET"
+		"ja": "Powered by Community Map Maker",
+		"en": "Powered by Community Map Maker"
 	},
 	"about": {
-		"ja": "「あぁっとマーク淀川」開発サイト",
-		"en": "AattoMark-Yodogawa development site"
-	},
-	"owner": {
-		"ja": "淀川アートネットについて",
-		"en": "about YODOGAWA ART-NET"
-	},
-	"licence_title": {
 		"ja": "あぁっとマーク淀川について",
 		"en": "about AattoMark-Yodogawa"
 	},
+	"owner": {
+		"ja": "コミュニティマップメーカー開発サイト",
+		"en": "Community Map Maker development site"
+	},
+	"licence_title": {
+		"ja": "利用規約",
+		"en": "Terms of Use"
+	},
 	"licence_message": {
-		"ja": "「あぁっとマーク淀川」は十三周辺のアートと当活動に協賛して頂いている施設の情報を提供しています。<br>このサイトで使われているデータは、OpenStreetMapとアートネットが持つデータを組み合わせています。<br><br>淀川アートネットについて<br><a href='https://yodogawaartnet.jimdofree.com/'>https://yodogawaartnet.jimdofree.com/</a>",
-		"en": "AattoMark-Yodogawa provides information on art around Juso and facilities that support our activities.<br>The data used is a combination of OpenStreetMap and YODOGAWA ART-NET data.<br><br><a href='https://yodogawaartnet.jimdofree.com/'>https://yodogawaartnet.jimdofree.com/</a>"
+		"ja": "あぁっとマーク淀川のデータはOpenStreetMapと独自データを組み合わせています。",
+		"en": "The data of AattoMark-Yodogawa is a combination of OpenStreetMap and Original data."
 	},
 	"more_message": {
 		"ja": "",
