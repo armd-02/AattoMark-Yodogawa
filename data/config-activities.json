@@ -1,6 +1,6 @@
 {
     "activities": {
-        "AattoMark": {
+        "Playgrounds": {
             "header": "",
             "footer": "",
             "form": {
@@ -8,16 +8,6 @@
                     "glot": "actdate",
                     "type": "date",
                     "gsheet": "actdate"
-                },
-                "category": {
-                    "glot": "act_category",
-                    "type": "select",
-                    "category": [
-                        "イベント",
-                        "活動記録",
-                        "店舗紹介"
-                    ],
-                    "gsheet": "category"
                 },
                 "title": {
                     "glot": "title",

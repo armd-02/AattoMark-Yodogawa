@@ -17,32 +17,22 @@
                 136.11914
             ]
         ],
-        "initZoom": 15,
+        "initZoom": 14,
         "pc_minZoom": 1,
         "phone_minZoom": 5,
-        "maxZoom": 21,
+        "maxZoom": 20,
         "zoomSnap": 0.5,
         "PoiLoadZoom": 14,
         "bookmark": true
     },
     "PoiViewZoom": {
-        "arts": 13,
-        "wayside_shrine":13,
-        "restaurant": 19,
-        "shop":19,
-        "pub":19,
-        "bath":19,
-        "theatre":19,
+        "Playgrounds_Poi": 18,
+        "Playgrounds_Area": 15,
         "activity": 12
     },
     "targets": [
-        "arts",
-        "wayside_shrine",
-        "restaurant",
-        "shop",
-        "pub",
-        "bath",
-        "theatre",
+        "Playgrounds_Poi",
+        "Playgrounds_Area",
         "activity"
     ],
     "listTable": {
@@ -60,11 +50,11 @@
     },
     "google": {
         "Analytics": "",
-        "AppScript": "https://script.google.com/macros/s/AKfycbwk27MRk-dhdd92QmXdy1gSG4tNvA5hbPQdsz_Ho_p8zebqvNrKJnCe26ZedTO4vlPO/exec",
+        "AppScript": "https://script.google.com/macros/s/AKfycbzQBY5sfw0pv7lI64J71pP0yBEIje2AbKcWenoJI1PVQcZTtDSbwTwnnXYcbsGKCtZS/exec",
         "targetName": "activity"
     },
     "splash": {
-        "url": "./image/AattoMark.png"
+        "url": "./image/Playgrounds.png"
     },
     "static": {
         "mode": false,
@@ -107,7 +97,7 @@
     "detail_menu": [
         {
             "glot-model": "act_add",
-            "linkto": "javascript:modal_activities.edit({form:'AattoMark'})",
+            "linkto": "javascript:modal_activities.edit({form:'Playgrounds'})",
             "divider": false
         },
         {
@@ -128,7 +118,7 @@
         "buttons": [
             {
                 "btn_class": "btn btn-light border-secondary mr-2",
-                "code": "javascript:modal_activities.edit({form:'AattoMark'})",
+                "code": "javascript:modal_activities.edit({form:'Playgrounds'})",
                 "icon_class": "fas fa-plus",
                 "btn_glot_name": "add_activity"
             },

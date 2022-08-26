@@ -1,27 +1,27 @@
 {
 	"site_title": {
-		"ja": "あぁっとマーク淀川",
-		"en": "AattoMark-Yodogawa"
+		"ja": "遊具のある公園マップ",
+		"en": "playground equipment map"
 	},
 	"site_subtitle": {
-		"ja": "by 淀川アートネット",
-		"en": "by YODOGAWA ART-NET"
+		"ja": "by みんなで公園マッププロジェクト",
+		"en": "by playground map for everyone project"
 	},
 	"about": {
-		"ja": "「あぁっとマーク淀川」開発サイト",
-		"en": "AattoMark-Yodogawa development site"
+		"ja": "「遊具のある公園マップ」開発サイト",
+		"en": "playground equipment map development site"
 	},
 	"owner": {
-		"ja": "淀川アートネットについて",
-		"en": "about YODOGAWA ART-NET"
+		"ja": "みんなで公園マッププロジェクトについて",
+		"en": "about playground map for everyone project"
 	},
 	"licence_title": {
-		"ja": "あぁっとマーク淀川について",
-		"en": "about AattoMark-Yodogawa"
+		"ja": "遊具のある公園マップについて",
+		"en": "about playground equipment map"
 	},
 	"licence_message": {
-		"ja": "「あぁっとマーク淀川」は十三周辺のアートと当活動に協賛して頂いている施設の情報を提供しています。<br>このサイトで使われているデータは、OpenStreetMapとアートネットが持つデータを組み合わせています。<br><br>淀川アートネットについて<br><a href='https://yodogawaartnet.jimdofree.com/'>https://yodogawaartnet.jimdofree.com/</a>",
-		"en": "AattoMark-Yodogawa provides information on art around Juso and facilities that support our activities.<br>The data used is a combination of OpenStreetMap and YODOGAWA ART-NET data.<br><br><a href='https://yodogawaartnet.jimdofree.com/'>https://yodogawaartnet.jimdofree.com/</a>"
+		"ja": "みんなで遊具のある公園情報を集めてマップを作っています。<br>このサイトで使われているデータは、OpenStreetMapとプロジェクトのデータを組み合わせています。</a>",
+		"en": "We are all collecting information about parks with playground equipment and making maps.<br>The data used is a combination of OpenStreetMap and playground equipment for everyone project.</a>"
 	},
 	"more_message": {
 		"ja": "",
@@ -48,7 +48,7 @@
 		"en": "Memorials"
 	},
 	"actdate":{
-		"ja":"発生日",
+		"ja":"確認日",
 		"en":"Disaster Date"
 	},
 	"ds_subject":{
